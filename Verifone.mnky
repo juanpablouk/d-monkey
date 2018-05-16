@@ -1,0 +1,82 @@
+[Options]
+@include[] = /^https?://.*demo.*\.appdynamics\.com(:[0-9]+)?/.*$/
+@namespace[] = appdynamics
+
+[Variables]
+$bankName = Verifone//Replace with your prospects name
+$domain = verifone.co.uk//Domain of the banking application
+
+[Application]
+Web-Tier-Services = Gateway API
+ECommerce-Services = Core App Server
+Active MQ-fulfillmentQueue = Integration Bridge Queue
+Active MQ-OrderQueue = Verifone Queue
+Active MQ-CustomerQueue = Verifone Reporting Queue
+Order-Processing-Services = Integration Bridge Servers
+Inventory-Services = Bank Gateway
+ECommerce-Fulfillment = Integration
+api.mainsupplier.com = Supplier Service
+api.secondarysupplier.com= Fulfillment Service
+XE-Oracle DB-or...4bit Production= Oracle DB
+XE-Oracle-ORACL...4bit Production= DB2
+APPDY-MySQL DB-...ubuntu0.16.04.2= SQL Server
+api.shipping.com=https://www.verifone.com/
+INVENTORY-MySQL...ubuntu0.16.04.2 = MySQL
+
+[BTs]
+ECommerce = Verifone Gateway
+ecommerce = verifone
+/store = /verifone
+/appdynamicspilot = /update
+/ViewCart!sendItems.action = Contactless card transaction
+/viewcart!senditems.action = Contactless card transaction
+Checkout = Payment
+Add to Cart = Refund
+Add To Cart = External Void
+Confirm Order = Currency convertion
+Fetch Catalog = Pre-autorisation
+Order = Settlement
+Shipping Address =  Issue report
+viewcart = Gift card
+order = verifonetnx
+/appdynamicspilot/ViewCart!sendItems.action = Surcharge function
+Homepage = Manual entry
+Login =  Monthly report
+
+[Apps]
+
+Payments Modernization = Verifone Test
+Integration = Verifone CRM
+Fulfillment Service = Barclays
+Supplier Service = RBS
+
+[IOT]
+Event Types = Marketplace Apps
+Network Request = Apptizer
+Apptizers = Network Requests
+Sleep = Photofy
+Wake = Giftfly
+Search = Pointy
+Error = AllDox
+AllDoxs = Errors
+AllDoxs By Device = Errors By Device
+AllDoxs By Firmware = Errors By Firmware
+AddToCart = TruRating
+Payment = flexReceipts
+Startup = Zapper
+Tickets Sold = Transactions
+Users = Devices
+Active Devices = Offline Devices
+MovieId= Merchant ID
+
+[Devices]
+MovieTicketKiosk - A80A6 = Carbon Mobile
+MovieTicketKiosk - 08341 = e355
+MovieTicketKiosk - 03EDA = e285
+MovieTicketKiosk - 48412 = Carbon 8
+MovieTicketKiosk - 033EE = Carbon 10
+MovieTicketKiosk - 72AAE = e280
+MovieTicketKiosk - 1C632 = VX690
+MovieTicketKiosk - 1F291 = VX680
+MovieTicketKiosk - 53799 = V400m
+MovieTicketKiosk - 2958E = UX410

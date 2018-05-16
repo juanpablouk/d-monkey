@@ -1,0 +1,84 @@
+[Options]
+@include[] = /^https?://.*demo.*\.appdynamics\.com(:[0-9]+)?/.*$/
+@namespace[] = appdynamics
+
+[Variables]
+$bankName = TP//Replace with your prospects name
+$domain = travisperkins.co.uk//Domain of the banking application
+
+[Dashboard]
+Authenticate = Landing
+Account Profile = Search
+Receive Offer = Add for delivery
+Convert Offer = Checkout
+
+
+[BiQ]
+San Francisco = London
+Honolulu = Manchester
+Seattle = Swindon
+Cupertino = Reading
+New York = Ascot
+Bangalore = Wigan
+London = Leeds
+New England = Liverpool
+Cleveland = York
+Palo Alto = Hull
+Redwood City = Wokingham
+Mountain View = Cardiff
+Paris = Glasgow
+
+[Products]
+Sacred Hoops = Kitchens
+A Clockwork Orange = Bathrooms
+Unbroken = Building Materials
+The Goldfinch: A Novel = Gardens
+Shantaram = Doors & Windows
+Farewell To Arms = Flooring
+The Tourist = Tiles
+The Fist Of God = Bathroom Accessories
+Heating & Plumbing
+The Lost City Of Z = Tools & Workwear
+Freakonomics = Bathroom Suites
+The Godfather = Basins
+Driven From Within = Bathroom Taps
+
+
+[outcomes]
+ 
+Application Complete = Supplier
+Docs Verified = Factory
+Credit Check = Distribution
+Underwriting = Retail
+Loan Approved = Customer
+Conventional = Wickes
+Small Business = Benchmarx
+ARM = Tile Giant
+FHA = Toolstation
+Home-Equity = ProWarm
+Personal = Keyline
+Auto = Rudridge
+
+Atlanta, GA = Reading
+Boston, MA = Manchester
+Memphis, TN = Liverpool
+Baltimore, MD = Wigan
+Columbus, OH = Sheffield
+Philadelphia, PA = Hull
+Chicago, IL = York
+Washington, DC = Bradford
+Louisville, KY = Manchester
+, NY =
+
+Loan Amount by Type = Orders by business
+Loan Approval Process = Supply Chain Process
+Loan Approval Time by Loan Type = Supply Chain Time by business
+loanType = business
+
+ApplicationSubmission = Supplier
+VerifyDocumentation = Factory
+CreditCheck = Distribution
+RetailComplete = Retail
+LoanApproved = Customer
+
+AD-Financial Loan Approval = Travis  Perkins
