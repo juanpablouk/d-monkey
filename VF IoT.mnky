@@ -1,0 +1,124 @@
+[Options]
+@include[] = /^https?://.*demo.*\.appdynamics\.com(:[0-9]+)?/.*$/
+@namespace[] = appdynamics
+
+[Variables]
+$bankName = Vodafone//Replace with your prospects name
+$domain = vodafone.co.uk//Domain of the banking application
+
+[Application]
+Web-Tier-Services = Web-Tier
+ECommerce-Services = Portal Core
+Active MQ-fulfillmentQueue = Integration Bridge Queue
+Active MQ-OrderQueue = Service Queue
+Active MQ-CustomerQueue = VF Reporting Queue
+Order-Processing-Services = Integration Bridge Servers
+Inventory-Services = Portal Gateway
+ECommerce-Fulfillment = Integration
+api.mainsupplier.com = Supplier Service
+api.secondarysupplier.com= Fulfillment Service
+XE-Oracle DB-or...4bit Production= Oracle DB
+XE-Oracle-ORACL...4bit Production= DB2
+APPDY-MySQL DB-...ubuntu0.16.04.2= SQL Server
+api.shipping.com=https://www.vodafone.com/
+INVENTORY-MySQL...ubuntu0.16.04.2 = MySQL
+
+[BTs]
+ECommerce = Vodafone
+ecommerce = vodafone
+/store = /vodafone
+/appdynamicspilot = /update
+/ViewCart!sendItems.action = Contactless card transaction
+/viewcart!senditems.action = Contactless card transaction
+Checkout = Configure
+Add to Cart = Landing
+Add To Cart = External Void
+Confirm Order = Price
+Fetch Catalog = Quote
+Order = Account
+Shipping Address =  Issue report
+viewcart = Gift card
+order = vodafonetnx
+/appdynamicspilot/ViewCart!sendItems.action = Surcharge function
+Homepage = Manual entry
+Login =  Monthly report
+
+[Apps]
+
+Payments Modernization = Vodafone Test
+Fulfillment Service = Royal Mail
+Supplier Service = SFDC
+
+[Dashbaord]
+Authenticate = Landing
+Account Profile = Configure
+Receive Offer = Price
+Convert Offer = Quote
+Offers = CPQ
+Seeing = Interacting with
+
+[Cities]
+San Francisco = Berlin
+Honolulu = Oslo
+Seattle = Amsterdam
+Cupertino = Paris
+New York = Moscow
+Bangalore = Sydney
+London = Cairo
+New England = Beijing
+Cleveland = Tokyo
+Palo Alto = Vienna
+Redwood City = Sao Paulo
+Mountain View = Dubai
+
+[Membership]
+Customer Type = Customer
+SILVER  = BMW
+PLATINUM = TomTom
+GOLD = Audi
+BRONZE = VW
+DIAMOND = Fiat
+cartTotal = Total
+customerType = customer
+
+[Products]
+Sacred Hoops = Infotainment services
+A Clockwork Orange = Usage-based insurance
+Unbroken = Remote diagnostics
+The Goldfinch: A Novel = Vehicle Relationship Mng
+Shantaram = Fleet mng services
+Farewell To Arms = Tracker
+The Tourist = Fleet mng services
+The Fist Of God = Usage-based insurance
+The Lost City Of Z = Remote diagnostics
+Freakonomics = Remote diagnosticss
+The Godfather = Remote diagnostics
+Driven From Within = Remote diagnostics
+Personal = Fleet mng services
+
+[Outcomes]
+LoanApproval = SIM Activation
+loan = SIM
+ApplicationSubmission = SIM Request
+VerifyDocumentation = Balance Check
+CreditCheck = Inventory Check
+UnderwritingComplete = SIM Sent
+LoanApproved = SIM Activated
+
+Loan = SIM
+Application Complete = SIM Request
+Docs Verified = Balance Check
+Credit Check = Inventory Check
+Underwriting = SIM Sent
+Approved = Activated
+SIM Approval Time by SIM Type = Aproval Time by Customer
+SIMType = Customer
+Conventional = BMW
+Small Business = TomTom
+ARM = Audi
+FHA = VW
+Home-Equity = Fiat
+
+[IOT]
+MovieTicket = MobilePhone
+Movie Ticket = Mobile Phone

@@ -1,0 +1,58 @@
+[Options]
+; If you don't like this base template click on 'Settings' at the left
+; side and change it to your own needs!
+
+; Script only run on the appdynamics' demo environments by default
+@include[] = /^https?://.*demo.*\.appdynamics\.com(:[0-9]+)?/.*$/
+
+; Make the use of appd commands easier by importing the namespace
+@namespace[] = appdynamics
+
+//BTs and Apps
+AD-Financial = Openbank
+DC = AWS
+Research Stock = Check Balance
+researchStock = checkBalance
+Get Quote = Setup Transfer
+getStockQuote = setupTransfer
+Process Trade = Transfer Funds
+processTrade = transferFunds
+
+//Cities
+San Francisco = Madrid
+Honolulu = Barcelona
+Seattle = Malaga
+Cupertino = Valencia
+New York = Murcia
+Bangalore = Asturias
+London = Cadiz
+New England = Granada
+Cleveland = Sevilla
+Palo Alto = Valladolid
+Redwood City = Segovia
+Mountain View = Tarragona
+
+//Analytics dashboard
+SILVER = Cuentas
+PLATINUM = Tarjetas
+GOLD = Depositos
+BRONZE = Inversiones
+DIAMOND = Financiacion
+Revenue = Applications 
+cartTotal = application
+Checkout = newAccount
+
+//Products:
+    Sacred Hoops = Cuenta Corriente Open
+    A Clockwork Orange = Cuenta de Ahorro Bienvenida
+    Unbroken = Cuenta de Ahorro Openbank
+    The Goldfinch: A Novel = Tarjeta Prepago eCard
+    Shantaram = Acciones
+    Farewell To Arms = Planes de Pensiones
+    The Tourist = Tarjeta Open Debit
+    The Fist Of God = Tarjeta Open Credit
+    The Lost City Of Z = Tarjeta de Débito MiniCard
+    Freakonomics = Pack Débito Crédito Premium
+    The Godfather = Pack Débito Crédito Diamond
+    Driven From Within = Hipoteca Open
+    Personal = Préstamo Nómina
